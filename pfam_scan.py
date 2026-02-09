@@ -166,7 +166,7 @@ def run_hmmscan(args) -> subprocess.CompletedProcess:
         #filtering = ['-E', f'{args.evalue}', '--domE', f'{args.evalue}']
         filtering = ['--domE', f'{args.evalue}']
     cmd = [
-        'hmmscan',
+        'nhmmscan',  # for long-read support
         '--notextw',
         '--cpu',
         f'{args.cpu}',
