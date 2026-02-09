@@ -171,7 +171,7 @@ def run_hmmscan(args) -> subprocess.CompletedProcess:
         '--cpu',
         f'{args.cpu}',
         *filtering,
-        '--domtblout',
+        '--dfamtblout',
         f'{args.temp_file}',
         f'{args.db}',
         f'{args.fasta}',
